@@ -1,0 +1,35 @@
+env:
+  ZOLA_VERSION: "0.16.1"
+  SOURCE_BRANCH: "main"
+  TARGET_BRANCH: "gh-pages"
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out repo
+      uses: actions/checkout@v2
+    - name: Install zola
+      run: |
+        set -x
+        wget -O - \
+           "https://github.com/getzola/zola/releases/download/v${ZOLA_VERSION}/zola-v${ZOLA_VERSION}-x86_64-unknown-linux-gnu.tar.gz" \
+        | sudo tar xzf - -C /usr/local/bin
+    - name: Generate HTML & CNAME
+      run: |
+        zola build
+    - name: Deploy to gh-pages
+      if: ${{ github.event_name == 'push' && github.ref == format('refs/heads/{0}', env.SOURCE_BRANCH) }}
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./public
+        force_orphan: true

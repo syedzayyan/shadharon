@@ -1,13 +1,19 @@
 # Shadharon
 
-Simple blog theme powered by [Zola](getzola.org). See a live preview [here](https://github.com/syedzayyan/shadharon).
+Simple blog theme powered by [Zola](getzola.org). See a live preview [here](https://syedzayyan.github.io/shadharon).
 
 > Name derived from the Bengali Word - সাধারণ which translates to "generic"
 
 <details open>
   <summary>Dark theme</summary>
   
-  ![blog-dark]()
+  ![blog-dark](https://raw.githubusercontent.com/syedzayyan/shadharon/main/screenshot-dark.png)
+</details>
+
+<details close>
+  <summary>Light theme</summary>
+  
+  ![light-dark](https://raw.githubusercontent.com/syedzayyan/shadharon/main/screenshot-light.png)
 </details>
 
 ## Features
@@ -20,9 +26,11 @@ Simple blog theme powered by [Zola](getzola.org). See a live preview [here](http
 
 ## Installation
 
+0. Initialize Git Repo if not initialized
+
 1. Download the theme
 ```
-git submodule add xxxxx themes/apollo
+git submodule add https://github.com/syedzayyan/shadharon themes/shadharon
 ```
 
 2. Add `theme = "shadharon"` to your `config.toml`
