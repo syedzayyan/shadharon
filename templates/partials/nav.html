@@ -1,0 +1,40 @@
+<header>
+    <div class="navbar">
+        <div class="nav-title nav-navs">
+            <a class="nav-links home-title" href={{ config.base_url }}>{{ config.title
+                }}</a>
+        </div>
+
+        {%- if config.extra.menu %}
+        <nav class="nav-title nav-navs">
+            {% for menu in config.extra.menu %}
+            <a class="nav-links" href={{ menu.url }}>
+                {%- if menu.icon %}
+                <img alt={{ menu.name }} height="15" width="15" src="/menu_icon/{{ menu.icon }}" />
+                {% endif %}
+                {{ menu.name }}</a>
+            {% endfor %}
+        </nav>
+        {% endif %}
+
+        
+        <nav class="socials nav-navs">
+            {%- if config.extra.socials %}
+            {% for social in config.extra.socials %}
+            <a rel="noopener noreferrer" target="_blank" class="nav-links" href="{{ social.url }}" class="social">
+                <img alt={{ social.name }} title={{ social.name }} src="/social_icons/{{ social.icon }}.svg">
+            </a>
+            {% endfor %}
+            {% endif %}
+            <label class="theme-switcher" for="themeswitch">
+                <div class="background"></div>
+                <input type="checkbox" id="themeswitch">
+                <div class="switch">
+                    <img class="moon" src="/menu_icon/moon.png">
+                    <img class="sun" src="/menu_icon/sun.png">
+                </div>
+            </label>
+        </nav>
+        
+    </div>
+</header>

@@ -1,0 +1,41 @@
+#banner-container-home {
+    display: flex;
+    width: 100%;
+    margin: 20px auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container-home {
+    position: relative;
+    width: 30%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#home-banner-text {
+    width: 70%;
+    font-size: 1.1em;
+    line-height: 200%;
+    padding-right: 5%;
+}
+.banner-home-img{
+    border-radius: 50%;
+    border:none;
+}
+@media only screen and (max-width: 600px) {
+    #banner-container-home {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .image-container-home {
+        width: 95%;
+        height: 50vh;
+    }
+
+    #home-banner-text {
+        width: 95%;
+
+    }
+}

@@ -1,0 +1,80 @@
+.theme-switcher{
+    top: -13px;
+    width: 50px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+    margin: 0 auto;
+    .background{
+        width: 50px;
+        height: 20px;
+        background-color: var(--input-back);
+        border-radius: 30px;
+    }
+    .switch{
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+        height: 30px;
+        width: 30px;
+        background-color: var(--input-color);
+        position: absolute;
+        top: -5px;
+        left: 0px;
+        border-radius: 50%;
+        transition: all 0.3s ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 60%;
+            height: auto;
+            position: absolute;
+            transition: all 0.2s ease-in-out;
+            border:none;
+        }
+        .sun{
+            opacity: 0;
+        }
+        .moon{
+            opacity: 1;
+        }
+    }
+    input{
+        display: none;
+        &:checked + .switch {
+            left: 20px;
+            .sun{
+                opacity: 1;
+            }
+            .moon{
+                opacity: 0;
+            }
+        }
+    }
+}
+
+
+
+
+
+.logo {
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    left: 10px;
+    top: 10px;
+    flex-direction: row;
+    z-index: 1000;
+    
+    a {
+        display: block;
+        height: 30px;
+        width: auto;
+        cursor: pointer;
+        margin-right: 10px;
+        img {
+            height: 100%;
+            width: auto;
+        }
+    }
+  }

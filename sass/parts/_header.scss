@@ -1,0 +1,117 @@
+.page-header {
+  font-size: 3em;
+  line-height: 100%;
+  font-family: var(--header-font);
+  margin: 4rem 0px 1rem 0px;
+}
+
+.centered-header {
+  font-family: var(--header-font);
+
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 1em;
+}
+
+header {
+  width: 100%;
+  background-color: var(--navbar-color);
+}
+.navbar{
+  max-width : var(--max-layout-width);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1em 0;
+  margin:0 auto;
+}
+@media only screen and (max-width:1000px) {
+  .navbar{
+    max-width: var(--normal-layout-width);
+  }
+  .nav-navs{
+    margin: 0 auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media only screen and (max-width:600px) {
+  .navbar{
+    max-width: var(--medium-layout-width);
+  }
+}
+@media only screen and (max-width:300px) {
+  .navbar{
+    max-width: var(--small-layout-width);
+  }
+}
+.nav-links{
+  text-decoration: none;
+  color: var(--text-color);
+  padding:5px;
+  border-radius:5px;
+  transition:100ms;
+}
+.nav-links:hover {
+  color: var(--links);
+  background-color:var(--secondary-color);
+}
+header .main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 1.5rem;
+
+  /* Otherwise header and menu is too close on small screens*/
+  margin-bottom: 10px;
+}
+.nav-navs img{
+  border: none;
+}
+.home-title{
+  font-size: 1.6em;
+  color:#ff3344;
+}
+.socials {
+  /* flex-child */
+  flex-grow: 0;
+  /* flex-container */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 6px;
+}
+
+.social {
+  border-bottom: unset;
+  background-image: unset;
+  padding: 2px;
+}
+
+.social>img {
+  border: unset;
+  width: 24px;
+  height: 24px;
+
+}
+
+.meta {
+  color: #999;
+  letter-spacing: -0.5px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .social>img {
+    filter: invert(1);
+  }
+}
