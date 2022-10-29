@@ -37,7 +37,7 @@ git submodule add https://github.com/syedzayyan/shadharon themes/shadharon
 3. Copy the example content
 
 ```
-cp themes/shadharon/content/. content
+cp -R themes/shadharon/content/. content
 ```
 4. For customization refer to config.toml files, which has comments.
 
