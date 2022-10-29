@@ -6,11 +6,13 @@ Simple blog theme powered by [Zola](getzola.org). See a live preview [here](http
 
 <details open>
   <summary>Dark theme</summary>
+
   ![blog-dark](https://raw.githubusercontent.com/syedzayyan/shadharon/main/screenshot.png)
 </details>
 
 <details close>
   <summary>Light theme</summary>
+  
   ![light-dark](https://raw.githubusercontent.com/syedzayyan/shadharon/main/screenshot-light.png)
 </details>
 
