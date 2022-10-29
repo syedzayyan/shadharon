@@ -48,7 +48,7 @@ These filenames are relative to the root of the site. In this example, the two C
 
 ## References
 
-This theme is takes inspiration from 
+This theme takes inspiration from 
 - [apollo](https://github.com/not-matthias/apollo).  
 - [Tania's Website](https://tania.dev/)
 - [Anpu Zola Theme](https://github.com/zbrox/anpu-zola-theme)
