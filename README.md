@@ -1,8 +1,8 @@
-# apollo
+# Shadharon
 
-Simple blog theme powered by [Zola](getzola.org). See a live preview [here](https://not-matthias.github.io/apollo).
+Simple blog theme powered by [Zola](getzola.org). See a live preview [here](https://github.com/syedzayyan/shadharon).
 
-<sub><sup>Name derived from the Bengali Word - সাধারণ which translates to "generic"</sup></sub>
+> Name derived from the Bengali Word - সাধারণ which translates to "generic"
 
 <details open>
   <summary>Dark theme</summary>
