@@ -49,11 +49,6 @@ a:hover {
   background-color: var(--primary-color);
   color: var(--hover-color);
 }
-
-time {
-  color: grey;
-}
-
 /* Remove post list padding */
 @media screen and (max-width: 600px) {
   .list>ul {

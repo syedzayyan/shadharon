@@ -21,7 +21,7 @@
         <nav class="socials nav-navs">
             {%- if config.extra.socials %}
             {% for social in config.extra.socials %}
-            <a rel="noopener noreferrer" target="_blank" class="nav-links" href="{{ social.url }}" class="social">
+            <a rel="noopener noreferrer" target="_blank" class="nav-links social" href="{{ social.url }}">
                 <img alt={{ social.name }} title={{ social.name }} src="/social_icons/{{ social.icon }}.svg">
             </a>
             {% endfor %}
@@ -30,8 +30,8 @@
                 <div class="background"></div>
                 <input type="checkbox" id="themeswitch">
                 <div class="switch">
-                    <img class="moon" src="/menu_icon/moon.png">
-                    <img class="sun" src="/menu_icon/sun.png">
+                    <img alt = "theme switch to dark" class="moon" src="/menu_icon/moon.png">
+                    <img alt = "theme switch to light" class="sun" src="/menu_icon/sun.png">
                 </div>
             </label>
         </nav>

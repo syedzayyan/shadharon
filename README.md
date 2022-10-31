@@ -39,12 +39,24 @@ git submodule add https://github.com/syedzayyan/shadharon themes/shadharon
 ```
 cp -R themes/shadharon/content/. content
 ```
-4. For customization refer to config.toml files, which has comments.
 
-5. For customizing the banner on the homepage the content/posts/_index.md needs modification. The desc variable under `extra`, specifically. You could delete this as well to remove banner. For an about page or any aditional page an .md file in the "content" directory will do.
+## Customization
 
-## Options
+1. For customization refer to config.toml files, which has comments.
+
+2. For customizing the banner on the homepage the content/posts/_index.md needs modification. The desc variable under `extra`, specifically. You could delete this as well to remove banner. For an about page or any aditional page an .md file in the "content" directory will do.
+
+You can add stylesheets to override the theme:
+
+```toml
+[extra]
+stylesheets = [
+    "override.css",
+]
+```
+
 These filenames are relative to the root of the site. In this example, the two CSS files would be in the `static` folder.
+
 
 ## References
 
