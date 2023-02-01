@@ -102,7 +102,11 @@ header .main {
   border: unset;
   width: 24px;
   height: 24px;
+  filter: invert(1);
+  }
 
+[data-theme="light"] .social>img {
+  filter: invert(0);
 }
 
 .meta {
