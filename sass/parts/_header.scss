@@ -113,9 +113,3 @@ header .main {
   color: var(--meta-color);
   letter-spacing: -0.5px;
 }
-
-@media (prefers-color-scheme: dark) {
-  .social>img {
-    filter: invert(1);
-  }
-}
