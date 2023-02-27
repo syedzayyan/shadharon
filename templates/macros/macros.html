@@ -15,7 +15,18 @@
             {% if page.draft %}
             <span class="draft-label">DRAFT</span>
             {% endif %}
-
+            <br />
+            <span>
+                {% if page.taxonomies and page.taxonomies.tags %}
+                <div class="post-tags">
+                    <nav class="nav tags">
+                        {% for tag in page.taxonomies.tags %}
+                        <a href={{ get_taxonomy_url(kind='tags' , name=tag) | safe }}>#{{ tag }}</a>&nbsp;
+                        {% endfor %}
+                    </nav>
+                </div>
+                {% endif %}
+            </span>
         </div>
 
         <br />
@@ -96,8 +107,9 @@
                 {% if page.taxonomies and page.taxonomies.tags %}
                 <div class="post-tags">
                     <nav class="nav tags">
+                        🏷:
                         {% for tag in page.taxonomies.tags %}
-                        🏷: <a href={{ get_taxonomy_url(kind='tags' , name=tag) | safe }}>{{ tag }}</a>
+                        <a href={{ get_taxonomy_url(kind='tags' , name=tag) | safe }}>{{ tag }}</a> &nbsp;
                         {% endfor %}
                     </nav>
                 </div>
