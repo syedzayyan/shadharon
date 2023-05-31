@@ -1,6 +1,6 @@
 # Shadharon
 
-Simple blog theme powered by [Zola](getzola.org). See a live preview [here](https://syedzayyan.github.io/shadharon).
+Simple blog theme powered by [Zola](getzola.org). See a live preview [here](https://shadharon.syedzayyan.com/).
 
 > Name derived from the Bengali Word - সাধারণ which translates to "generic"
 
