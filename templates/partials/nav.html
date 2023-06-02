@@ -17,7 +17,13 @@
         </nav>
         {% endif %}
 
-        
+        <div class="search-container">
+            <input id="search" type="search" placeholder="🔎 Search the docs">
+            <div class="search-results">
+                <div class="search-results__items"></div>
+            </div>
+        </div>
+
         <nav class="socials nav-navs">
             {%- if config.extra.socials %}
             {% for social in config.extra.socials %}

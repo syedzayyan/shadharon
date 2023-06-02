@@ -6,14 +6,18 @@
 
 <body>
     {% include "partials/nav.html" %}
-    <div class="content">
 
+    <div class="content">
         {# Post page is the default #}
         {% block main_content %}
             Nothing here?!
         {% endblock main_content %}
     </div>
+
     {% include "partials/footer.html" %}
+
+    <script type="text/javascript" src="{{ get_url(path="elasticlunr.min.js") }}"></script>
+    <script type="text/javascript" src="{{ get_url(path="search.js") }}"></script>
 </body>
 
 </html>
