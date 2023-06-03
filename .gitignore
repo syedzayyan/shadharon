@@ -1,0 +1,7 @@
+
+# MacOS fs
+.DS_Store
+
+
+# Zola
+public/
