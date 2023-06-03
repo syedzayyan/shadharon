@@ -17,20 +17,14 @@
         </nav>
         {% endif %}
 
-        <div class="search-container">
-            <input id="search" type="search" placeholder="🔎 Search the docs">
-            <div class="search-results">
-                <div class="search-results__items"></div>
-            </div>
-        </div>
-
         <nav class="socials nav-navs">
             {%- if config.extra.socials %}
-            {% for social in config.extra.socials %}
-            <a rel="noopener noreferrer" target="_blank" class="nav-links social" href="{{ social.url }}">
-                <img alt={{ social.name }} title={{ social.name }} src="/social_icons/{{ social.icon }}.svg">
-            </a>
-            {% endfor %}
+                <div class="search-container">
+                    <input id="search" type="search" placeholder="🔎 Search">
+                    <div class="search-results">
+                        <div class="search-results__items"></div>
+                    </div>
+                </div>
             {% endif %}
             <label class="theme-switcher" for="themeswitch">
                 <div class="background"></div>

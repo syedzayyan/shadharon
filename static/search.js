@@ -136,27 +136,14 @@ function initSearch() {
 
   var options = {
     bool: "AND",
-    expand: true,
     fields: {
       title: {boost: 2},
       body: {boost: 1},
     }
   };
   var currentTerm = "";
-  var index;
-
-  var initIndex = async function () {
-    if (index === undefined) {
-      index = fetch("/search_index.en.json")
-        .then(
-          async function(response) {
-            return await elasticlunr.Index.load(await response.json());
-        }
-      );
-    }
-    let res = await index;
-    return res;
-  }
+  
+  var initIndex = elasticlunr.Index.load(window.searchIndex);
 
   $searchInput.addEventListener("keyup", debounce(async function() {
     var term = $searchInput.value.trim();
@@ -170,7 +157,7 @@ function initSearch() {
       return;
     }
 
-    var results = (await initIndex()).search(term, options);
+    var results = initIndex.search(term, options);
     if (results.length === 0) {
       $searchResults.style.display = "none";
       return;
@@ -181,7 +168,7 @@ function initSearch() {
       item.innerHTML = formatSearchResultItem(results[i], term.split(" "));
       $searchResultsItems.appendChild(item);
     }
-  }, 50));
+  }, 150));
 
   window.addEventListener('click', function(e) {
     if ($searchResults.style.display == "block" && !$searchResults.contains(e.target)) {

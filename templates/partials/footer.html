@@ -1,6 +1,15 @@
 <footer>
     <section>
         <nav>
+            {%- if config.extra.socials %}
+            {% for social in config.extra.socials %}
+            <a rel="noopener noreferrer" target="_blank" class="nav-links social" href="{{ social.url }}">
+                <img alt={{ social.name }} title={{ social.name }} src="/social_icons/{{ social.icon }}.svg">
+            </a>
+            {% endfor %}
+            {% endif %}
+        </nav>
+        <nav>
             <span className="desktop-only">This blog is powered by 
                 <a href = "https://getzola.org/" rel="noopener noreferrer" target="_blank">Zola</a> with theme by
                 <a href = "https://syedzayyan.com/" rel="noopener noreferrer" target="_blank">SZM</a></span>
