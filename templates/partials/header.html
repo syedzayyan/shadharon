@@ -29,6 +29,10 @@
         trailing_slash=false) }}">
     <link rel="stylesheet" type="text/css" media="screen" href={{ get_url(path="main.css" ) }} />
 
+    <script type="text/javascript" src="{{ get_url(path="elasticlunr.min.js") }}"></script>
+    <script type="text/javascript" src="{{ get_url(path="search_index.en.js") }}"></script>
+    <script type="text/javascript" src="{{ get_url(path="search.js") }}"></script>
+
 
     {% if config.extra.stylesheets %}
     {% for stylesheet in config.extra.stylesheets %}
