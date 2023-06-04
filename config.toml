@@ -20,7 +20,7 @@ highlight_theme = "css"
 [extra]
 toc = true
 use_cdn = false
-search_bar = false
+search_bar = true
 
 #Full path after the base URL required. So if you were to place it in "static" it would be "/favicon.ico"
 favicon = ""
