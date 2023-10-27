@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>Heisenberg - thoughts</title>
+	<subtitle>Walter is kind, caring and timid, but also demanding, calculating, and ruthless. His invented pseudonym, Heisenberg, becomes an alter ego – a fantasy for him to live out a love of power. Beneath both sides of his dual personality, he views the world in the rarefied scientific terms of chemistry.</subtitle>
+	<link href="https://shadharon.syedzayyan.com/tags/thoughts/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://shadharon.syedzayyan.com"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2022-01-01T00:00:00+00:00</updated>
+	<id>https://shadharon.syedzayyan.com/tags/thoughts/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Markdown Test</title>
+		<published>2022-01-01T00:00:00+00:00</published>
+		<updated>2022-01-01T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://shadharon.syedzayyan.com/posts/markdown/" type="text/html"/>
+		<id>https://shadharon.syedzayyan.com/posts/markdown/</id>
+		<content type="html">&lt;h2 id=&quot;code-block&quot;&gt;Code Block&lt;&#x2F;h2&gt;
+&lt;pre data-lang=&quot;rust&quot; class=&quot;language-rust z-code&quot;&gt;&lt;code class=&quot;language-rust&quot; data-lang=&quot;rust&quot;&gt;&lt;span class=&quot;z-source z-rust&quot;&gt;&lt;span class=&quot;z-meta z-function z-rust&quot;&gt;&lt;span class=&quot;z-meta z-function z-rust&quot;&gt;&lt;span class=&quot;z-storage z-type z-function z-rust&quot;&gt;fn&lt;&#x2F;span&gt; &lt;&#x2F;span&gt;&lt;span class=&quot;z-entity z-name z-function z-rust&quot;&gt;main&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function z-rust&quot;&gt;&lt;span class=&quot;z-meta z-function z-parameters z-rust&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parameters z-begin z-rust&quot;&gt;(&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function z-rust&quot;&gt;&lt;span class=&quot;z-meta z-function z-parameters z-rust&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parameters z-end z-rust&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function z-rust&quot;&gt; &lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function z-rust&quot;&gt;&lt;span class=&quot;z-meta z-block z-rust&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-block z-begin z-rust&quot;&gt;{&lt;&#x2F;span&gt;
+    &lt;span class=&quot;z-support z-macro z-rust&quot;&gt;println!&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-group z-rust&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-group z-begin z-rust&quot;&gt;(&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-group z-rust&quot;&gt;&lt;span class=&quot;z-string z-quoted z-double z-rust&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-rust&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;Hello World&lt;span class=&quot;z-punctuation z-definition z-string z-end z-rust&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-group z-rust&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-group z-end z-rust&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-terminator z-rust&quot;&gt;;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-block z-rust&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-block z-end z-rust&quot;&gt;}&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;quote&quot;&gt;Quote&lt;&#x2F;h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I&#x27;m gonna make him an offer he can&#x27;t refuse&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Godfather&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;code-tags&quot;&gt;Code tags&lt;&#x2F;h2&gt;
+&lt;p&gt;Lorem ipsum &lt;code&gt;dolor&lt;&#x2F;code&gt; sit amet, &lt;code&gt;consectetur adipiscing&lt;&#x2F;code&gt; elit. 
+&lt;code&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>

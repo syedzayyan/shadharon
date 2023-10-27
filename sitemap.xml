@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://shadharon.syedzayyan.com/</loc>
+    </url>
+    <url>
+        <loc>https://shadharon.syedzayyan.com/posts/</loc>
+    </url>
+    <url>
+        <loc>https://shadharon.syedzayyan.com/posts/markdown/</loc>
+        <lastmod>2022-01-01</lastmod>
+    </url>
+    <url>
+        <loc>https://shadharon.syedzayyan.com/posts/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://shadharon.syedzayyan.com/posts/toc/</loc>
+        <lastmod>2022-01-02</lastmod>
+    </url>
+    <url>
+        <loc>https://shadharon.syedzayyan.com/projects/</loc>
+    </url>
+    <url>
+        <loc>https://shadharon.syedzayyan.com/projects/well-ts/</loc>
+    </url>
+    <url>
+        <loc>https://shadharon.syedzayyan.com/tags/</loc>
+    </url>
+    <url>
+        <loc>https://shadharon.syedzayyan.com/tags/thoughts/</loc>
+    </url>
+</urlset>
